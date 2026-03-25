@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="9" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-25T17:57:20 CET" name="Command line suite" finished-at="2026-03-25T17:59:28 CET" duration-ms="128376">
+    <groups>
+    </groups>
+    <test started-at="2026-03-25T17:57:20 CET" name="Command line test" finished-at="2026-03-25T17:59:28 CET" duration-ms="128376">
+      <class name="com.carbooking.gui.tests.positive.RegistrationPositiveTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.carbooking.gui.tests.positive.RegistrationPositiveTests@7645f03e]" started-at="2026-03-25T17:57:36 CET" name="setUp" finished-at="2026-03-25T17:57:37 CET" duration-ms="923" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testUserRegistration()[pri:0, instance:com.carbooking.gui.tests.positive.RegistrationPositiveTests@7645f03e]" started-at="2026-03-25T17:57:37 CET" name="testUserRegistration" finished-at="2026-03-25T17:57:59 CET" duration-ms="22366" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[ОШИБКА: Регистрация прошла, но автоматический вход не выполнен. URL: http://localhost:5173/register expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: ОШИБКА: Регистрация прошла, но автоматический вход не выполнен. URL: http://localhost:5173/register expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.carbooking.gui.tests.positive.RegistrationPositiveTests.testUserRegistration(RegistrationPositiveTests.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.carbooking.gui.tests.all.AllTestsRunner.runEverything(AllTestsRunner.java:27)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestRunner.runTests(TestNGTestRunner.java:131)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestDefinitionProcessor.stop(TestNGTestDefinitionProcessor.java:110)
+at org.gradle.api.internal.tasks.testing.SuiteTestDefinitionProcessor.stop(SuiteTestDefinitionProcessor.java:64)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.gradle.internal.dispatch.MethodInvocation.invokeOn(MethodInvocation.java:77)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:28)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:19)
+at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:88)
+at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:195)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:126)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserRegistration -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.carbooking.gui.tests.positive.RegistrationPositiveTests@7645f03e]" started-at="2026-03-25T17:57:59 CET" name="tearDown" finished-at="2026-03-25T17:57:59 CET" duration-ms="380" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testUserRegistration status=FAILURE method=RegistrationPositiveTests.testUserRegistration()[pri:0, instance:com.carbooking.gui.tests.positive.RegistrationPositiveTests@7645f03e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.carbooking.gui.tests.positive.RegistrationPositiveTests -->
+      <class name="com.carbooking.gui.tests.negative.BookingNegativeTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.carbooking.gui.tests.negative.BookingNegativeTests@7a6ea47d]" started-at="2026-03-25T17:58:38 CET" name="setUp" finished-at="2026-03-25T17:58:40 CET" duration-ms="1407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testBookingInPastDates()[pri:1, instance:com.carbooking.gui.tests.negative.BookingNegativeTests@7a6ea47d]" started-at="2026-03-25T17:58:40 CET" name="testBookingInPastDates" finished-at="2026-03-25T17:59:03 CET" duration-ms="23497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBookingInPastDates -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.carbooking.gui.tests.negative.BookingNegativeTests@7a6ea47d]" started-at="2026-03-25T17:59:03 CET" name="tearDown" finished-at="2026-03-25T17:59:04 CET" duration-ms="517" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testBookingInPastDates status=SUCCESS method=BookingNegativeTests.testBookingInPastDates()[pri:1, instance:com.carbooking.gui.tests.negative.BookingNegativeTests@7a6ea47d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.carbooking.gui.tests.negative.BookingNegativeTests@7a6ea47d]" started-at="2026-03-25T17:59:04 CET" name="setUp" finished-at="2026-03-25T17:59:05 CET" duration-ms="1595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testBookingWithoutLogin()[pri:2, instance:com.carbooking.gui.tests.negative.BookingNegativeTests@7a6ea47d]" started-at="2026-03-25T17:59:05 CET" name="testBookingWithoutLogin" finished-at="2026-03-25T17:59:15 CET" duration-ms="10162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBookingWithoutLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.carbooking.gui.tests.negative.BookingNegativeTests@7a6ea47d]" started-at="2026-03-25T17:59:15 CET" name="tearDown" finished-at="2026-03-25T17:59:16 CET" duration-ms="198" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testBookingWithoutLogin status=SUCCESS method=BookingNegativeTests.testBookingWithoutLogin()[pri:2, instance:com.carbooking.gui.tests.negative.BookingNegativeTests@7a6ea47d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.carbooking.gui.tests.negative.BookingNegativeTests -->
+      <class name="com.carbooking.gui.tests.all.FullWorkflowTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.carbooking.gui.tests.all.FullWorkflowTest@daf22f0]" started-at="2026-03-25T17:59:20 CET" name="setUp" finished-at="2026-03-25T17:59:22 CET" duration-ms="1431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFullCarBookingWorkflow()[pri:0, instance:com.carbooking.gui.tests.all.FullWorkflowTest@daf22f0]" started-at="2026-03-25T17:59:22 CET" name="testFullCarBookingWorkflow" description="Полный цикл: Логин -&gt; Поиск -&gt; Бронирование" finished-at="2026-03-25T17:59:28 CET" duration-ms="6084" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFullCarBookingWorkflow -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.carbooking.gui.tests.all.FullWorkflowTest@daf22f0]" started-at="2026-03-25T17:59:28 CET" name="tearDown" finished-at="2026-03-25T17:59:28 CET" duration-ms="217" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testFullCarBookingWorkflow status=SUCCESS method=FullWorkflowTest.testFullCarBookingWorkflow()[pri:0, instance:com.carbooking.gui.tests.all.FullWorkflowTest@daf22f0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.carbooking.gui.tests.all.FullWorkflowTest -->
+      <class name="com.carbooking.gui.tests.negative.LoginNegativeTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.carbooking.gui.tests.negative.LoginNegativeTests@158e9f6e]" started-at="2026-03-25T17:57:59 CET" name="setUp" finished-at="2026-03-25T17:58:01 CET" duration-ms="1465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithInvalidPassword()[pri:1, instance:com.carbooking.gui.tests.negative.LoginNegativeTests@158e9f6e]" started-at="2026-03-25T17:58:01 CET" name="loginWithInvalidPassword" finished-at="2026-03-25T17:58:13 CET" duration-ms="12586" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidPassword -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.carbooking.gui.tests.negative.LoginNegativeTests@158e9f6e]" started-at="2026-03-25T17:58:13 CET" name="tearDown" finished-at="2026-03-25T17:58:14 CET" duration-ms="224" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginWithInvalidPassword status=SUCCESS method=LoginNegativeTests.loginWithInvalidPassword()[pri:1, instance:com.carbooking.gui.tests.negative.LoginNegativeTests@158e9f6e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.carbooking.gui.tests.negative.LoginNegativeTests@158e9f6e]" started-at="2026-03-25T17:58:14 CET" name="setUp" finished-at="2026-03-25T17:58:15 CET" duration-ms="1414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithEmptyEmail()[pri:2, instance:com.carbooking.gui.tests.negative.LoginNegativeTests@158e9f6e]" started-at="2026-03-25T17:58:15 CET" name="loginWithEmptyEmail" finished-at="2026-03-25T17:58:26 CET" duration-ms="10476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithEmptyEmail -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.carbooking.gui.tests.negative.LoginNegativeTests@158e9f6e]" started-at="2026-03-25T17:58:26 CET" name="tearDown" finished-at="2026-03-25T17:58:26 CET" duration-ms="267" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginWithEmptyEmail status=SUCCESS method=LoginNegativeTests.loginWithEmptyEmail()[pri:2, instance:com.carbooking.gui.tests.negative.LoginNegativeTests@158e9f6e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.carbooking.gui.tests.negative.LoginNegativeTests@158e9f6e]" started-at="2026-03-25T17:58:26 CET" name="setUp" finished-at="2026-03-25T17:58:27 CET" duration-ms="1568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithInvalidEmailFormat()[pri:3, instance:com.carbooking.gui.tests.negative.LoginNegativeTests@158e9f6e]" started-at="2026-03-25T17:58:27 CET" name="loginWithInvalidEmailFormat" finished-at="2026-03-25T17:58:38 CET" duration-ms="10599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidEmailFormat -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.carbooking.gui.tests.negative.LoginNegativeTests@158e9f6e]" started-at="2026-03-25T17:58:38 CET" name="tearDown" finished-at="2026-03-25T17:58:38 CET" duration-ms="258" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginWithInvalidEmailFormat status=SUCCESS method=LoginNegativeTests.loginWithInvalidEmailFormat()[pri:3, instance:com.carbooking.gui.tests.negative.LoginNegativeTests@158e9f6e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.carbooking.gui.tests.negative.LoginNegativeTests -->
+      <class name="com.carbooking.gui.tests.positive.BookingPositiveTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.carbooking.gui.tests.positive.BookingPositiveTests@6c184d4d]" started-at="2026-03-25T17:57:26 CET" name="setUp" finished-at="2026-03-25T17:57:28 CET" duration-ms="2057" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCarBookingSuccess()[pri:0, instance:com.carbooking.gui.tests.positive.BookingPositiveTests@6c184d4d]" started-at="2026-03-25T17:57:28 CET" name="testCarBookingSuccess" finished-at="2026-03-25T17:57:35 CET" duration-ms="7441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCarBookingSuccess -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.carbooking.gui.tests.positive.BookingPositiveTests@6c184d4d]" started-at="2026-03-25T17:57:35 CET" name="tearDown" finished-at="2026-03-25T17:57:36 CET" duration-ms="223" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCarBookingSuccess status=SUCCESS method=BookingPositiveTests.testCarBookingSuccess()[pri:0, instance:com.carbooking.gui.tests.positive.BookingPositiveTests@6c184d4d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.carbooking.gui.tests.positive.BookingPositiveTests -->
+      <class name="com.carbooking.gui.tests.positive.LoginPositiveTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.carbooking.gui.tests.positive.LoginPositiveTests@173f1614]" started-at="2026-03-25T17:57:20 CET" name="setUp" finished-at="2026-03-25T17:57:22 CET" duration-ms="2227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginPositiveTest()[pri:0, instance:com.carbooking.gui.tests.positive.LoginPositiveTests@173f1614]" started-at="2026-03-25T17:57:22 CET" name="loginPositiveTest" finished-at="2026-03-25T17:57:26 CET" duration-ms="3967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPositiveTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.carbooking.gui.tests.positive.LoginPositiveTests@173f1614]" started-at="2026-03-25T17:57:26 CET" name="tearDown" finished-at="2026-03-25T17:57:26 CET" duration-ms="215" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginPositiveTest status=SUCCESS method=LoginPositiveTests.loginPositiveTest()[pri:0, instance:com.carbooking.gui.tests.positive.LoginPositiveTests@173f1614] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.carbooking.gui.tests.positive.LoginPositiveTests -->
+      <class name="com.carbooking.gui.tests.SecurityTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.carbooking.gui.tests.SecurityTests@54b2fc58]" started-at="2026-03-25T17:59:16 CET" name="setUp" finished-at="2026-03-25T17:59:17 CET" duration-ms="923" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="findIdorThreat()[pri:0, instance:com.carbooking.gui.tests.SecurityTests@54b2fc58]" started-at="2026-03-25T17:59:17 CET" name="findIdorThreat" description="Выявление угрозы IDOR (Риск слива персональных данных)" finished-at="2026-03-25T17:59:17 CET" duration-ms="912" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[УГРОЗА УТЕЧКИ: Персональные данные других пользователей доступны через манипуляцию ID в URL! expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: УГРОЗА УТЕЧКИ: Персональные данные других пользователей доступны через манипуляцию ID в URL! expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.carbooking.gui.tests.SecurityTests.findIdorThreat(SecurityTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.carbooking.gui.tests.all.AllTestsRunner.runEverything(AllTestsRunner.java:27)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestRunner.runTests(TestNGTestRunner.java:131)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestDefinitionProcessor.stop(TestNGTestDefinitionProcessor.java:110)
+at org.gradle.api.internal.tasks.testing.SuiteTestDefinitionProcessor.stop(SuiteTestDefinitionProcessor.java:64)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.gradle.internal.dispatch.MethodInvocation.invokeOn(MethodInvocation.java:77)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:28)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:19)
+at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:88)
+at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:195)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:126)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findIdorThreat -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.carbooking.gui.tests.SecurityTests@54b2fc58]" started-at="2026-03-25T17:59:17 CET" name="tearDown" finished-at="2026-03-25T17:59:18 CET" duration-ms="259" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=findIdorThreat status=FAILURE method=SecurityTests.findIdorThreat()[pri:0, instance:com.carbooking.gui.tests.SecurityTests@54b2fc58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.carbooking.gui.tests.SecurityTests@54b2fc58]" started-at="2026-03-25T17:59:18 CET" name="setUp" finished-at="2026-03-25T17:59:20 CET" duration-ms="1760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="findSqlInjectionThreat()[pri:0, instance:com.carbooking.gui.tests.SecurityTests@54b2fc58]" started-at="2026-03-25T17:59:20 CET" name="findSqlInjectionThreat" description="Выявление угрозы SQL Injection (Риск слива БД)" finished-at="2026-03-25T17:59:20 CET" duration-ms="486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findSqlInjectionThreat -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.carbooking.gui.tests.SecurityTests@54b2fc58]" started-at="2026-03-25T17:59:20 CET" name="tearDown" finished-at="2026-03-25T17:59:20 CET" duration-ms="174" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=findSqlInjectionThreat status=SUCCESS method=SecurityTests.findSqlInjectionThreat()[pri:0, instance:com.carbooking.gui.tests.SecurityTests@54b2fc58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.carbooking.gui.tests.SecurityTests -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

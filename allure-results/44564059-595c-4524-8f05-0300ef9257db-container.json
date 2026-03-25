@@ -1,0 +1,1 @@
+{"uuid":"44564059-595c-4524-8f05-0300ef9257db","name":"com.carbooking.taskApp.api.tests.BookingApiTest","children":["e3ca593b-d644-4944-863a-beb308fb91f7"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1774293236456,"stop":1774293236962}],"afters":[],"start":1774293236419,"stop":1774293238648}

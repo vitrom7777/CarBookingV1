@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.carbooking.taskApp.database.TestConnection" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-03-09T19:14:59.288Z" hostname="VITROM" time="0.648">
+<testsuite name="com.carbooking.taskApp.database.TestConnection" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-03-25T17:00:40.459Z" hostname="VITROM" time="0.432">
   <properties/>
-  <testcase name="testDBConnection" classname="com.carbooking.taskApp.database.TestConnection" time="0.643"/>
-  <system-out><![CDATA[DB connection OK
+  <testcase name="testDBConnection" classname="com.carbooking.taskApp.database.TestConnection" time="0.358"/>
+  <testcase name="testGetAllCarsFromDb" classname="com.carbooking.taskApp.database.TestConnection" time="0.048"/>
+  <system-out><![CDATA[18:00:40.469 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:40.469 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testDBConnection
+18:00:40.469 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+DB connection OK
+18:00:40.843 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testDBConnection
+18:00:40.843 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+18:00:40.843 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:40.843 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetAllCarsFromDb
+18:00:40.843 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+Total cars in the database: 6
+Car: Renault Captur | Status: available
+Car: Mercedes S-class | Status: available
+Car: Rolls Royce Phantom | Status: available
+Car: Honda Civic | Status: available
+Car: Hyundai Solaris | Status: available
+Car: Kia Rio | Status: available
+18:00:40.891 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ✅ TEST PASSED: testGetAllCarsFromDb
+18:00:40.891 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

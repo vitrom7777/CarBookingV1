@@ -28,6 +28,9 @@
 <li>
 <a class="" href="#">summary</a>
 </li>
+<li>
+<a class="" href="#">standard output</a>
+</li>
 </ul>
 <div class="tab">
 <h2>summary</h2>
@@ -41,13 +44,13 @@
 <tr>
 <td>
 <div class="infoBox">
-<div class="counter">2</div>
+<div class="counter">13</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox">
-<div class="counter">2</div>
+<div class="counter">13</div>
 <p>failures</p>
 </div>
 </td>
@@ -59,7 +62,7 @@
 </td>
 <td>
 <div class="infoBox duration">
-<div class="counter">0.070s</div>
+<div class="counter">5.006s</div>
 <p>duration</p>
 </div>
 </td>
@@ -101,24 +104,145 @@
 </thead>
 <tr>
 <td class="failures">
-<a href="testCheckAvailability.html">testCheckAvailability</a>
+<a href="testCreateBooking_InvalidDateRange_ShouldReturn400.html">testCreateBooking_InvalidDateRange_ShouldReturn400</a>
 </td>
-<td class="path" hidden="">testCheckAvailability</td>
+<td class="path" hidden="">testCreateBooking_InvalidDateRange_ShouldReturn400</td>
 <td>1</td>
 <td>1</td>
 <td>0</td>
-<td>0.036s</td>
+<td>1.751s</td>
 <td class="failures">0%</td>
 </tr>
 <tr>
 <td class="failures">
-<a href="testCreateBookingAndCheckInDb.html">testCreateBookingAndCheckInDb</a>
+<a href="testCreateBooking_PastDates_ShouldReturn400.html">testCreateBooking_PastDates_ShouldReturn400</a>
 </td>
-<td class="path" hidden="">testCreateBookingAndCheckInDb</td>
+<td class="path" hidden="">testCreateBooking_PastDates_ShouldReturn400</td>
 <td>1</td>
 <td>1</td>
 <td>0</td>
-<td>0.025s</td>
+<td>0.237s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="testCreateBooking_ValidData_ShouldReturn201.html">testCreateBooking_ValidData_ShouldReturn201</a>
+</td>
+<td class="path" hidden="">testCreateBooking_ValidData_ShouldReturn201</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0.215s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="testCreateBooking_WithoutUserId_ShouldReturn400.html">testCreateBooking_WithoutUserId_ShouldReturn400</a>
+</td>
+<td class="path" hidden="">testCreateBooking_WithoutUserId_ShouldReturn400</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0.227s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="testDeleteBooking_ExistingBooking_ShouldReturn200.html">testDeleteBooking_ExistingBooking_ShouldReturn200</a>
+</td>
+<td class="path" hidden="">testDeleteBooking_ExistingBooking_ShouldReturn200</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0.194s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="testDeleteBooking_NonExistingId_ShouldReturn404.html">testDeleteBooking_NonExistingId_ShouldReturn404</a>
+</td>
+<td class="path" hidden="">testDeleteBooking_NonExistingId_ShouldReturn404</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0.209s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="testGetAllBookings_ShouldReturn200.html">testGetAllBookings_ShouldReturn200</a>
+</td>
+<td class="path" hidden="">testGetAllBookings_ShouldReturn200</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0.196s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="testGetBookingById_ExistingBooking_ShouldReturn200.html">testGetBookingById_ExistingBooking_ShouldReturn200</a>
+</td>
+<td class="path" hidden="">testGetBookingById_ExistingBooking_ShouldReturn200</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0.171s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="testGetBookingById_InvalidIdFormat_ShouldReturn400.html">testGetBookingById_InvalidIdFormat_ShouldReturn400</a>
+</td>
+<td class="path" hidden="">testGetBookingById_InvalidIdFormat_ShouldReturn400</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0.180s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="testGetBookingById_NonExistingId_ShouldReturn404.html">testGetBookingById_NonExistingId_ShouldReturn404</a>
+</td>
+<td class="path" hidden="">testGetBookingById_NonExistingId_ShouldReturn404</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0.198s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="testGetBookings_ByUserId_ShouldReturnFilteredList.html">testGetBookings_ByUserId_ShouldReturnFilteredList</a>
+</td>
+<td class="path" hidden="">testGetBookings_ByUserId_ShouldReturnFilteredList</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0.196s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="testUpdateBooking_ChangeDates_ShouldReturn200.html">testUpdateBooking_ChangeDates_ShouldReturn200</a>
+</td>
+<td class="path" hidden="">testUpdateBooking_ChangeDates_ShouldReturn200</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0.351s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="testUpdateBooking_NonExistingId_ShouldReturn404.html">testUpdateBooking_NonExistingId_ShouldReturn404</a>
+</td>
+<td class="path" hidden="">testUpdateBooking_NonExistingId_ShouldReturn404</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0.191s</td>
 <td class="failures">0%</td>
 </tr>
 </table>
@@ -139,30 +263,251 @@
 </thead>
 <tr>
 <td class="failures">
-<a href="testCheckAvailability.html">testCheckAvailability</a>
+<a href="testCreateBooking_InvalidDateRange_ShouldReturn400.html">testCreateBooking_InvalidDateRange_ShouldReturn400</a>
 </td>
-<td class="path" hidden="">testCheckAvailability</td>
+<td class="path" hidden="">testCreateBooking_InvalidDateRange_ShouldReturn400</td>
 <td>1</td>
 <td>1</td>
 <td>0</td>
-<td>0.036s</td>
+<td>1.751s</td>
 <td class="failures">0%</td>
 </tr>
 <tr>
 <td class="failures">
-<a href="testCreateBookingAndCheckInDb.html">testCreateBookingAndCheckInDb</a>
+<a href="testCreateBooking_PastDates_ShouldReturn400.html">testCreateBooking_PastDates_ShouldReturn400</a>
 </td>
-<td class="path" hidden="">testCreateBookingAndCheckInDb</td>
+<td class="path" hidden="">testCreateBooking_PastDates_ShouldReturn400</td>
 <td>1</td>
 <td>1</td>
 <td>0</td>
-<td>0.025s</td>
+<td>0.237s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="testCreateBooking_ValidData_ShouldReturn201.html">testCreateBooking_ValidData_ShouldReturn201</a>
+</td>
+<td class="path" hidden="">testCreateBooking_ValidData_ShouldReturn201</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0.215s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="testCreateBooking_WithoutUserId_ShouldReturn400.html">testCreateBooking_WithoutUserId_ShouldReturn400</a>
+</td>
+<td class="path" hidden="">testCreateBooking_WithoutUserId_ShouldReturn400</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0.227s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="testDeleteBooking_ExistingBooking_ShouldReturn200.html">testDeleteBooking_ExistingBooking_ShouldReturn200</a>
+</td>
+<td class="path" hidden="">testDeleteBooking_ExistingBooking_ShouldReturn200</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0.194s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="testDeleteBooking_NonExistingId_ShouldReturn404.html">testDeleteBooking_NonExistingId_ShouldReturn404</a>
+</td>
+<td class="path" hidden="">testDeleteBooking_NonExistingId_ShouldReturn404</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0.209s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="testGetAllBookings_ShouldReturn200.html">testGetAllBookings_ShouldReturn200</a>
+</td>
+<td class="path" hidden="">testGetAllBookings_ShouldReturn200</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0.196s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="testGetBookingById_ExistingBooking_ShouldReturn200.html">testGetBookingById_ExistingBooking_ShouldReturn200</a>
+</td>
+<td class="path" hidden="">testGetBookingById_ExistingBooking_ShouldReturn200</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0.171s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="testGetBookingById_InvalidIdFormat_ShouldReturn400.html">testGetBookingById_InvalidIdFormat_ShouldReturn400</a>
+</td>
+<td class="path" hidden="">testGetBookingById_InvalidIdFormat_ShouldReturn400</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0.180s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="testGetBookingById_NonExistingId_ShouldReturn404.html">testGetBookingById_NonExistingId_ShouldReturn404</a>
+</td>
+<td class="path" hidden="">testGetBookingById_NonExistingId_ShouldReturn404</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0.198s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="testGetBookings_ByUserId_ShouldReturnFilteredList.html">testGetBookings_ByUserId_ShouldReturnFilteredList</a>
+</td>
+<td class="path" hidden="">testGetBookings_ByUserId_ShouldReturnFilteredList</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0.196s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="testUpdateBooking_ChangeDates_ShouldReturn200.html">testUpdateBooking_ChangeDates_ShouldReturn200</a>
+</td>
+<td class="path" hidden="">testUpdateBooking_ChangeDates_ShouldReturn200</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0.351s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="testUpdateBooking_NonExistingId_ShouldReturn404.html">testUpdateBooking_NonExistingId_ShouldReturn404</a>
+</td>
+<td class="path" hidden="">testUpdateBooking_NonExistingId_ShouldReturn404</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0.191s</td>
 <td class="failures">0%</td>
 </tr>
 </table>
 </div>
 </div>
 </div>
+</div>
+<div class="tab">
+<h2>standard output</h2>
+<span class="code">
+<pre id="root-0-test-stdout-com.carbooking.taskApp.api.tests.BookingApiTest">18:00:31.134 ?[34mINFO ?[0;39m [Test worker] ?[36mc.c.taskApp.api.config.BaseApiTest?[0;39m - ✅ BaseApiTest initialised
+18:00:31.136 ?[34mINFO ?[0;39m [Test worker] ?[36mc.c.taskApp.api.config.BaseApiTest?[0;39m -  BaseURI: https://dev.pshacks.org/api/v3
+18:00:31.136 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:31.136 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testCreateBooking_InvalidDateRange_ShouldReturn400
+18:00:31.136 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:32.887 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testCreateBooking_InvalidDateRange_ShouldReturn400
+18:00:32.887 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
+18:00:32.887 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+18:00:32.887 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:32.887 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testCreateBooking_PastDates_ShouldReturn400
+18:00:32.895 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:33.124 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testCreateBooking_PastDates_ShouldReturn400
+18:00:33.124 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
+18:00:33.124 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+18:00:33.124 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:33.124 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testCreateBooking_ValidData_ShouldReturn201
+18:00:33.124 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:33.341 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testCreateBooking_ValidData_ShouldReturn201
+18:00:33.341 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
+18:00:33.341 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+18:00:33.341 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:33.341 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testCreateBooking_WithoutUserId_ShouldReturn400
+18:00:33.341 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:33.574 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testCreateBooking_WithoutUserId_ShouldReturn400
+18:00:33.574 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
+18:00:33.574 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+18:00:33.577 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:33.577 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testDeleteBooking_ExistingBooking_ShouldReturn200
+18:00:33.577 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:33.784 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testDeleteBooking_ExistingBooking_ShouldReturn200
+18:00:33.784 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
+18:00:33.784 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+18:00:33.784 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:33.784 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testDeleteBooking_NonExistingId_ShouldReturn404
+18:00:33.784 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:34.004 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testDeleteBooking_NonExistingId_ShouldReturn404
+18:00:34.006 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
+18:00:34.006 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+18:00:34.006 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:34.006 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetAllBookings_ShouldReturn200
+18:00:34.008 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:34.206 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testGetAllBookings_ShouldReturn200
+18:00:34.206 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
+18:00:34.206 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+18:00:34.206 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:34.206 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetBookingById_ExistingBooking_ShouldReturn200
+18:00:34.206 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:34.377 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testGetBookingById_ExistingBooking_ShouldReturn200
+18:00:34.377 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
+18:00:34.377 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+18:00:34.377 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:34.377 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetBookingById_InvalidIdFormat_ShouldReturn400
+18:00:34.377 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:34.560 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testGetBookingById_InvalidIdFormat_ShouldReturn400
+18:00:34.560 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
+18:00:34.560 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+18:00:34.560 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:34.560 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetBookingById_NonExistingId_ShouldReturn404
+18:00:34.560 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:34.763 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testGetBookingById_NonExistingId_ShouldReturn404
+18:00:34.763 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
+18:00:34.763 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+18:00:34.763 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:34.763 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testGetBookings_ByUserId_ShouldReturnFilteredList
+18:00:34.763 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:34.959 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testGetBookings_ByUserId_ShouldReturnFilteredList
+18:00:34.959 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
+18:00:34.959 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+18:00:34.959 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:34.959 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testUpdateBooking_ChangeDates_ShouldReturn200
+18:00:34.959 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:35.310 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testUpdateBooking_ChangeDates_ShouldReturn200
+18:00:35.310 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
+18:00:35.310 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+18:00:35.310 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - 
+======================================================================
+18:00:35.310 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ****  TEST STARTED: testUpdateBooking_NonExistingId_ShouldReturn404
+18:00:35.310 ?[34mINFO ?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ======================================================================
+18:00:35.501 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ❌ TEST FAILED: testUpdateBooking_NonExistingId_ShouldReturn404
+18:00:35.501 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - Reason: Error during login attempt! expected [200] but found [401]
+18:00:35.501 ?[1;31mERROR?[0;39m [Test worker] ?[36mcom.carbooking.utils.TestNGListener?[0;39m - ----------------------------------------------------------------------
+</pre>
+<button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="root-0-test-stdout-com.carbooking.taskApp.api.tests.BookingApiTest">Copy</button>
+</span>
 </div>
 </div>
 </div>
@@ -174,7 +519,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 9.3.0</a> at 9 Mar 2026, 20:15:00</p>
+<a href="https://www.gradle.org">Gradle 9.3.0</a> at 25 Mar 2026, 18:01:55</p>
 </div>
 </div>
 </body>
