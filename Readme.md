@@ -181,7 +181,7 @@ automation framework
 
 ### Клонирование репозитория
 
-git clone [git@github.com:vitrom7777/CarBookingV1.git]{.mark}
+git clone [git@github.com:vitrom7777/CarBookingV1.git]
 
 ### Настройка окружения
 
