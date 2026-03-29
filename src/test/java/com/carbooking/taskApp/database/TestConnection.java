@@ -27,10 +27,6 @@ public class TestConnection {
 
                 Assert.assertFalse(cars.isEmpty(), "The list of cars in the database is empty!");
 
-        // 4. Проверяем количество (на сайте их 6, проверим и тут)
-//        Assert.assertEquals(cars.size(), 6, "Количество машин в базе не совпадает с ожидаемым!");
-
-        // 5. Выведем в консоль первую машину, чтобы убедиться в правильности полей
         //System.out.println("Проверка первой машины: " + cars.get(0).getBrand() + " " + cars.get(0).getModel());
 
         System.out.println("Total cars in the database: " + cars.size());
